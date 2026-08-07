@@ -49,3 +49,5 @@ kt_logs/
 # Temporary files
 *.tmp
 *.temp
+
+.streamlit/secrets.toml
