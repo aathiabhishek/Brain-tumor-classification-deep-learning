@@ -1,8 +1,15 @@
-# utils/auth.py
+import streamlit as st
+
+
 def check_login(username, password):
-    # You can later use DB or hashed passwords
-    dummy_users = {
-        "aathi": "1234",
-        "guest": "guest"
-    }
-    return dummy_users.get(username) == password
+    """Validate login credentials stored in Streamlit Secrets."""
+
+    try:
+        return (
+            username == st.secrets["auth"]["username"]
+            and password == st.secrets["auth"]["password"]
+        )
+
+    except KeyError:
+        st.error("Authentication credentials are not configured.")
+        return False
