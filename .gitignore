@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables / secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# User-uploaded MRI images
+uploads/*
+!uploads/.gitkeep
+
+# Processed MRI images
+processed_images/*
+!processed_images/.gitkeep
+
+# Dataset
+dataset/
+datasets/
+data/raw/
+data/brain_tumor_dataset/
+data/Training/
+data/Testing/
+
+# Logs
+*.log
+
+# Keras Tuner generated files
+kt_logs/
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,12 @@
+Classification Report - autoencoder
+
+              precision    recall  f1-score   support
+
+      glioma     0.8075    0.6433    0.7161       300
+  meningioma     0.5625    0.3824    0.4553       306
+     notumor     0.8100    0.9580    0.8778       405
+   pituitary     0.7091    0.9100    0.7971       300
+
+    accuracy                         0.7407      1311
+   macro avg     0.7223    0.7234    0.7116      1311
+weighted avg     0.7286    0.7407    0.7237      1311

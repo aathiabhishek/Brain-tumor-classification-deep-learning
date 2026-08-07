@@ -1,0 +1,127 @@
+{
+  "Glioma Tumor": {
+    "summary": "Gliomas are brain tumors arising from glial cells. Treatment includes surgery, radiation, and chemo.",
+    "foods": [
+      {
+        "name": "Blueberries",
+        "calories": 57,
+        "nutrients": "Rich in antioxidants"
+      },
+      {
+        "name": "Salmon",
+        "calories": 208,
+        "nutrients": "Omega-3s and anti-inflammatory"
+      },
+      {
+        "name": "Spinach",
+        "calories": 23,
+        "nutrients": "Folate and iron"
+      },
+      {
+        "name": "Broccoli",
+        "nutrients": "Rich in sulforaphane",
+        "calories": 55
+      },
+      {
+        "name": "Blueberries",
+        "nutrients": "High in antioxidants",
+        "calories": 84
+      },
+      {
+        "name": "Salmon",
+        "nutrients": "Omega-3 fatty acids",
+        "calories": 208
+      }
+    ]
+  },
+  "Meningioma Tumor": {
+    "summary": "Meningiomas form on brain membranes. Often benign. Treatment varies from surgery to monitoring.",
+    "foods": [
+      {
+        "name": "Broccoli",
+        "calories": 34,
+        "nutrients": "Fiber and sulforaphane"
+      },
+      {
+        "name": "Turmeric",
+        "calories": 29,
+        "nutrients": "Curcumin is anti-cancer"
+      },
+      {
+        "name": "Leafy Greens",
+        "nutrients": "Folate & fiber",
+        "calories": 25
+      },
+      {
+        "name": "Nuts",
+        "nutrients": "Healthy fats & vitamin E",
+        "calories": 160
+      },
+      {
+        "name": "Green Tea",
+        "nutrients": "Anti-inflammatory polyphenols",
+        "calories": 0
+      },
+      {
+        "name": "Green Tea",
+        "calories": 0,
+        "nutrients": "EGCG polyphenols"
+      }
+    ]
+  },
+  "No Tumor": {
+    "summary": "No tumor detected. Maintain a balanced and anti-inflammatory diet for prevention.",
+    "foods": [
+      {
+        "name": "Avocados",
+        "calories": 160,
+        "nutrients": "Healthy fats"
+      },
+      {
+        "name": "Nuts",
+        "calories": 607,
+        "nutrients": "Magnesium, Vitamin E"
+      },
+      {
+        "name": "Eggs",
+        "nutrients": "Rich in protein & B-vitamins",
+        "calories": 70
+      },
+      {
+        "name": "Avocados",
+        "nutrients": "Healthy fats & potassium",
+        "calories": 160
+      },
+      {
+        "name": "Quinoa",
+        "nutrients": "Complete protein",
+        "calories": 120
+      },
+      {
+        "name": "Tomatoes",
+        "calories": 18,
+        "nutrients": "Lycopene and vitamin C"
+      }
+    ]
+  },
+  "Pituitary Tumor": {
+    "summary": "Pituitary tumors affect hormone regulation. Often benign but can cause endocrine symptoms.",
+    "foods": [
+      {
+        "name": "Whole Grains",
+        "calories": 110,
+        "nutrients": "Fiber and B vitamins"
+      },
+      {
+        "name": "Carrots",
+        "calories": 41,
+        "nutrients": "Vitamin A and antioxidants"
+      },
+      {
+        "name": "Chia Seeds",
+        "calories": 486,
+        "nutrients": "Fiber, omega-3s"
+      }
+    ]
+  }
+}

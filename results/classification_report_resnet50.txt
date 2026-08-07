@@ -1,0 +1,12 @@
+Classification Report - resnet50
+
+              precision    recall  f1-score   support
+
+      glioma     0.7083    0.3400    0.4595       300
+  meningioma     0.5142    0.4150    0.4593       306
+     notumor     0.7899    0.7704    0.7800       405
+   pituitary     0.5448    0.9533    0.6933       300
+
+    accuracy                         0.6308      1311
+   macro avg     0.6393    0.6197    0.5980      1311
+weighted avg     0.6508    0.6308    0.6120      1311
