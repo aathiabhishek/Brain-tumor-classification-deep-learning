@@ -36,7 +36,7 @@ Upload an MRI image, select a trained model, view predictions and confidence sco
 
 ```text
                     ┌─────────────────────┐
-                    │      User Login     │
+                    │      Home    │
                     └──────────┬──────────┘
                                │
                                ▼
@@ -207,9 +207,7 @@ Brain-tumor-classification-deep-learning/
 │   ├── confusion_matrices/
 │   ├── loss_plots/
 │   └── training_history/
-│
-└── utils/
-    └── auth.py
+
 ```
 
 ---
