@@ -13,7 +13,6 @@ from bs4 import BeautifulSoup
 
 from PIL import Image
 
-from utils.auth import check_login
 
 
 # ============================================================
@@ -375,72 +374,6 @@ st.markdown(
 
 
 # ============================================================
-# 9. AUTHENTICATION
-# ============================================================
-
-def login():
-    """
-    Display login form and authenticate
-    using utils.auth.check_login().
-    """
-
-    st.markdown("## 🔐 Secure Login")
-
-    with st.form("login_form"):
-
-        username = st.text_input(
-            "👤 Username"
-        )
-
-        password = st.text_input(
-            "🔒 Password",
-            type="password"
-        )
-
-        submitted = st.form_submit_button(
-            "Login"
-        )
-
-
-        if submitted:
-
-            if check_login(
-                username,
-                password
-            ):
-
-                st.session_state.logged_in = True
-
-                st.session_state.username = username
-
-                st.success(
-                    "✅ Logged in successfully!"
-                )
-
-                st.rerun()
-
-            else:
-
-                st.error(
-                    "❌ Invalid credentials"
-                )
-
-
-# Initialize login state
-if "logged_in" not in st.session_state:
-
-    st.session_state.logged_in = False
-
-
-# Show login page if user is not logged in
-if not st.session_state.logged_in:
-
-    login()
-
-    st.stop()
-
-
-# ============================================================
 # 10. SIDEBAR
 # ============================================================
 
@@ -450,8 +383,7 @@ st.sidebar.image(
 )
 
 st.sidebar.markdown(
-    f"**👋 Welcome, "
-    f"{st.session_state.username.capitalize()}**"
+    "**👋 Welcome to NeuroScan Diagnostics**"
 )
 
 
@@ -461,35 +393,9 @@ page = st.sidebar.radio(
         "Home",
         "Upload MRI",
         "Tumor Info",
-        "Diet Plan",
-        "Logout"
+        "Diet Plan"
     ]
 )
-
-
-# ============================================================
-# 11. LOGOUT
-# ============================================================
-
-if page == "Logout":
-
-    st.session_state.logged_in = False
-
-    # Remove previous prediction
-    st.session_state.pop(
-        "last_pred",
-        None
-    )
-
-    st.rerun()
-
-
-
-
-
-
-
-
 
 
 
